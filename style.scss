@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(img/bacground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        &__content {
+            &_title {
+                max-width: 788px;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 78px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                padding-top: 217px;
+            }
+        
+            &_text {
+                max-width: 481px;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 32px;
+                align-items: center;
+                color: #FFFFFF;
+                text-decoration: none;
+                margin-top: 32px;
+                margin-bottom: 44px;
+                &-special {
+                    font-weight: 700;
+                }
+            }
+        
+            &_button {
+                height: 48px;
+                width: 234px;
+                background: #9C0332;
+                border-radius: 30px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                align-items: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+.product__content {
+    height: 556px;
+    display: grid;
+    box-sizing: border-box;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    background: #000915;
+    padding-top: 128px;
+
+    &_text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+    &_item {
+        height: 300px;
+        grid-column: span 4;
+        display: flex;
+        align-items: flex-end;
+
+        &-1 {
+            background-image: url(img/game1.jpg);
+            border-radius: 16px;
+            box-sizing: border-box;         
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding-left: 32px;
+            padding-bottom: 32px;
+        }
+
+        &-2 {
+            background-image: url(img/game2.jpg);
+            border-radius: 16px;
+            box-sizing: border-box;         
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 16px;
+            padding-left: 32px;
+            padding-bottom: 32px;
+        }
+
+        &-3 {
+            background-image: url(img/game3.jpg);
+            border-radius: 16px;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 16px;
+            padding-left: 32px;
+            padding-bottom: 32px;
+        }
+    }
+}
