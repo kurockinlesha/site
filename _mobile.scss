@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+
+.center {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.top {
+    height: 735px;
+    background-image: url(img/bacground_mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+            &_title {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+            &_text {
+                max-width: 343px;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                margin-bottom: 32px;
+            }
+    }
+}
+
+.product__content {
+    height: 1220px;
+    display: flex;
+    flex-direction: column;
+}
+
+}
