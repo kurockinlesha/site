@@ -7,16 +7,12 @@
   }
 }
 .image {
-  max-width: 100%;
+  width: 100%;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-.image {
-  width: 100%;
 }
 
 a {
@@ -146,7 +142,6 @@ body {
 .game-box__first {
   height: 800px;
   display: flex;
-  flex-wrap: wrap;
   gap: 135px;
 }
 .game-box__first_info {
@@ -220,6 +215,28 @@ body {
     flex-direction: column;
   }
   .game-box__first {
-    height: 653px;
+    max-height: 653px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .game-box__first_info {
+    padding-top: 51px;
+    text-align: center;
+  }
+  .game-box__first_info_heading {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game-box__first_info_text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game-box__first_annim {
+    padding-top: 0px;
+  }
+  .game-box__first_annim-image {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

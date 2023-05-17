@@ -41,7 +41,11 @@
 
     .game-box {
         &__first {
-            height: 653px;
+            max-height: 653px;
+            display: flex;
+            gap: 64px;
+            align-items: center;
+            flex-direction: column;
 
             &_info {
                 padding-top: 51px;
@@ -57,5 +61,14 @@
                     line-height: 22px;
                 }
             }
+
+            &_annim {
+                padding-top: 0px;
+
+                &-image {
+                    width: 100%;
+                }
+            }
         }
+    }
 }
