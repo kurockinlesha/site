@@ -1,3 +1,15 @@
+@keyframes myAnim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+.image {
+  max-width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +74,10 @@ body {
   align-items: center;
   color: #FFFFFF;
 }
+.top__content_button:hover {
+  background: #da4545;
+  transition: 0.5s;
+}
 
 .product__content {
   height: 556px;
@@ -77,6 +93,13 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
+}
+.product__content_item:hover {
+  transform: scale(1.05);
+  animation: myAnim 0.3s ease 0s 1 normal forwards;
+  box-shadow: 0 0 5px #ccc;
+  padding: 4px;
+  transition: 0.5s;
 }
 .product__content_item {
   height: 300px;
@@ -117,6 +140,51 @@ body {
   padding-bottom: 32px;
 }
 
+.game-box {
+  background: #000915;
+}
+.game-box__first {
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 135px;
+}
+.game-box__first_info {
+  padding-top: 282px;
+}
+.game-box__first_info_heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game-box__first_info_text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.game-box__first_info_button {
+  width: 234px;
+  height: 48px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  color: #FFFFFF;
+}
+.game-box__first_info_button:hover {
+  background: #da4545;
+  transition: 0.5s;
+}
+.game-box__first_annim {
+  padding-top: 233px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -150,5 +218,8 @@ body {
     height: 1220px;
     display: flex;
     flex-direction: column;
+  }
+  .game-box__first {
+    height: 653px;
   }
 }/*# sourceMappingURL=style.css.map */
