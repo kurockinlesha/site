@@ -203,6 +203,53 @@ body {
         }
 
     }
+
+    &__second {
+        height: 800px;
+        display: flex;
+        gap: 135px;
+
+        &_annim {
+            padding-top: 233px;
+        }
+
+        &_info {
+            padding-top: 282px;
+
+        &_heading {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: #FFFFFF;
+        }
+
+        &_text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        &_button {
+            width: 234px;
+            height: 48px;
+            background: #9C0332;
+            border-radius: 30px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            align-items: center;
+            color: #FFFFFF;
+        }
+
+        &_button:hover {
+            background: #da4545;
+            transition: 0.5s;
+        }
+    }
+    }
 }
 
 @import 'mobile';

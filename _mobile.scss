@@ -70,5 +70,36 @@
                 }
             }
         }
+
+        &__second {
+            max-height: 653px;
+            display: flex;
+            gap: 64px;
+            align-items: center;
+            flex-direction: column-reverse;
+
+            &_info {
+                padding-top: 51px;
+                text-align: center;
+
+                &_heading {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                &_text {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &_annim {
+                padding-top: 0px;
+
+                &-image {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
