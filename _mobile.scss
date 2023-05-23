@@ -101,5 +101,31 @@
                 }
             }
         }
+
+        &__third {
+            max-height: 800px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(../site/img/background_bottom_mob.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+
+            &_info {
+                padding-top: 141px;
+                text-align: center;
+
+                &_heading {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                &_text {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
     }
 }
