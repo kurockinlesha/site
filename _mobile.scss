@@ -1,0 +1,131 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+        background-image: url(img/bacground_mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &__content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            &_title {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &_text {
+                max-width: 343px;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .product__content {
+        height: 1220px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game-box {
+        &__first {
+            max-height: 653px;
+            display: flex;
+            gap: 64px;
+            align-items: center;
+            flex-direction: column;
+
+            &_info {
+                padding-top: 51px;
+                text-align: center;
+
+                &_heading {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                &_text {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &_annim {
+                padding-top: 0px;
+
+                &-image {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__second {
+            max-height: 653px;
+            display: flex;
+            gap: 64px;
+            align-items: center;
+            flex-direction: column-reverse;
+
+            &_info {
+                padding-top: 51px;
+                text-align: center;
+
+                &_heading {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                &_text {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &_annim {
+                padding-top: 0px;
+
+                &-image {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__third {
+            max-height: 800px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(../site/img/background_bottom_mob.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+
+            &_info {
+                padding-top: 141px;
+                text-align: center;
+
+                &_heading {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                &_text {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
